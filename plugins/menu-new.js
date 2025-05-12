@@ -43,7 +43,7 @@ cmd({
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363354023106228@newsletter',
+                newsletterJid: '120363300351654980@newsletter',
                 newsletterName: config.OWNER_NAME,
                 serverMessageId: 143
             }
@@ -55,7 +55,7 @@ cmd({
                 return await conn.sendMessage(
                     from,
                     {
-                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/7zfdcq.jpg' },
+                        image: { url: config.MENU_IMAGE_URL || 'https://ibb.co/Y9shNn6' },
                         caption: menuCaption,
                         contextInfo: contextInfo
                     },
@@ -260,7 +260,7 @@ cmd({
 ┃★│ • blackbox [query]
 ┃★│ • luma [query]
 ┃★│ • dj [query]
-┃★│ • khan [query]
+┃★│ • mafia [query]
 ┃★╰──────────────
 ╰━━━━━━━━━━━━━━━┈⊷
 > ${config.DESCRIPTION}`,
