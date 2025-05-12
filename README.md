@@ -26,6 +26,8 @@
 
 ---
 
+# ![MAFIA-MD](https://readme-typing-svg.demolab.com?font=Roboto&size=26&weight=600&pause=1000&color=FF69B4&center=true&vCenter=true&width=600&lines=✨+ASSALAMUALAIKUM!+WELCOME+TO+MAFIA-MD;🔥+ULTIMATE+WHATSAPP+BOT+WITH+300%2B+FEATURES;⚡+FASTEST+•+MOST+ADVANCED+•+USER+FRIENDLY)
+
 
 <div align="center">
   <img src="https://files.catbox.moe/ywm2cj" width="400" style="border-radius: 20px; box-shadow: 0 0 25px #0088ff;"/>
