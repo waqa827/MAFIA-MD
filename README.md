@@ -19,7 +19,7 @@
 
 
 <div align="center">
-  <img src="https://files.catbox.moe/ywm2cj" width="400" style="border-radius: 20px; box-shadow: 0 0 25px #0088ff;"/>
+  <img src="https://ibb.co/Y9shNn6" width="400" style="border-radius: 20px; box-shadow: 0 0 25px #0088ff;"/>
 </div>
 
 <div align="center">
