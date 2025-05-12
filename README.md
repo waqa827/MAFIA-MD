@@ -6,6 +6,9 @@
   <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=600&size=25&duration=4000&pause=1000&color=00F7FF&center=true&vCenter=true&width=500&lines=ULTIMATE+WHATSAPP+BOT;MULTI-DEVICE+SUPPORT;POWERED+BY+BAILEYS;FAST++SECURE++RELIABLE" alt="Animated Typing SVG" />
 </p>
 
+<img src="https://ibb.co/Y9shNn6" height="90" width="100%">
+
+
 
 > **Current Bot Version `5.0.0`**  
 
@@ -139,16 +142,9 @@
   <img src="https://github.com/MAFIAADEEL/MAFIA-MD/blob/main/assets/digitalrain.gif?raw=true" width="100%"/>
 </div>
 
-## 🗃️ PROJECT ARCHITECTS
-<div align="center">
-  <a href="https://github.com/MAFIAADEEL">
-    <img src="https://github-readme-stats.vercel.app/api?username=JawadYT36&show_icons=true&theme=dark&border_color=00ffff&title_color=00ffff&icon_color=00ffff" width="400"/>
-  </a>
-</div>
 
-<div align="center">
-  <img src="https://github.com/MAFIAADEEL/MAFIA-MD/blob/main/assets/futuretech.gif?raw=true" width="100%"/>
-</div>
+
+
 
 ## 👑 ADEEL STATUS
 
