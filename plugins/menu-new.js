@@ -55,7 +55,7 @@ cmd({
                 return await conn.sendMessage(
                     from,
                     {
-                        image: { url: config.MENU_IMAGE_URL || 'https://ibb.co/Y9shNn6' },
+                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/p5ey7c.jpg' },
                         caption: menuCaption,
                         contextInfo: contextInfo
                     },
@@ -76,7 +76,7 @@ cmd({
             try {
                 await new Promise(resolve => setTimeout(resolve, 1000)); // Small delay after image
                 await conn.sendMessage(from, {
-                    audio: { url: 'https://github.com/JawadYT36/KHAN-DATA/raw/refs/heads/main/autovoice/menunew.m4a' },
+                    audio: { url: 'https://files.catbox.moe/ejt6f2.mp4' },
                     mimetype: 'audio/mp4',
                     ptt: true,
                 }, { quoted: mek });
@@ -84,6 +84,22 @@ cmd({
                 console.log('Audio send failed, continuing without it');
             }
         };
+
+        
+        // Function to send menu audio with timeout
+        const sendMenuAudio = async () => {
+            try {
+                await new Promise(resolve => setTimeout(resolve, 1000)); // Small delay after image
+                await conn.sendMessage(from, {
+                    audio: { url: 'https://files.catbox.moe/d84133.mp4' },
+                    mimetype: 'audio/mp4',
+                    ptt: true,
+                }, { quoted: mek });
+            } catch (e) {
+                console.log('Audio send failed, continuing without it');
+            }
+        };
+        
 
         // Send image first, then audio sequentially
         let sentMsg;
