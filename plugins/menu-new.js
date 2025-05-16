@@ -43,7 +43,7 @@ cmd({
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363300351654980@newsletter',
+                newsletterJid: '120363354023106228@newsletter',
                 newsletterName: config.OWNER_NAME,
                 serverMessageId: 143
             }
@@ -76,7 +76,7 @@ cmd({
             try {
                 await new Promise(resolve => setTimeout(resolve, 1000)); // Small delay after image
                 await conn.sendMessage(from, {
-                    audio: { url: 'https://files.catbox.moe/ejt6f2.mp4' },
+                    audio: { url: 'https://github.com/JawadYT36/KHAN-DATA/raw/refs/heads/main/autovoice/menunew.m4a' },
                     mimetype: 'audio/mp4',
                     ptt: true,
                 }, { quoted: mek });
@@ -85,8 +85,7 @@ cmd({
             }
         };
 
-        
-      // Send image first, then audio sequentially
+        // Send image first, then audio sequentially
         let sentMsg;
         try {
             // Send image with 10s timeout
@@ -261,7 +260,7 @@ cmd({
 ┃★│ • blackbox [query]
 ┃★│ • luma [query]
 ┃★│ • dj [query]
-┃★│ • mafia [query]
+┃★│ • khan [query]
 ┃★╰──────────────
 ╰━━━━━━━━━━━━━━━┈⊷
 > ${config.DESCRIPTION}`,
@@ -488,3 +487,4 @@ cmd({
         }
     }
 });
+                
