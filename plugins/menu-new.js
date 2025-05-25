@@ -76,7 +76,7 @@ cmd({
             try {
                 await new Promise(resolve => setTimeout(resolve, 1000)); // Small delay after image
                 await conn.sendMessage(from, {
-                    audio: { url: 'https://github.com/JawadYT36/KHAN-DATA/raw/refs/heads/main/autovoice/menunew.m4a' },
+                    audio: { url: 'https://cdn.apis-nothing.xyz/file/7yboi4.mp3' },
                     mimetype: 'audio/mp4',
                     ptt: true,
                 }, { quoted: mek });
