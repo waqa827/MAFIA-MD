@@ -38,7 +38,7 @@ async (conn, mek, m, { from }) => {
 ┃◈┃• *Version*: 2.0.0 Beta
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙼𝙰𝙵𝙸𝙰 𝙰𝙳𝙴𝙴𝙻`, // Display the owner's details
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝗠𝙰𝙵𝙸𝙰 𝗔𝙳𝙴𝙴𝙻`, // Display the owner's details
             contextInfo: {
                 mentionedJid: [`${ownerNumber.replace('+', '')}@s.whatsapp.net`], 
                 forwardingScore: 999,
