@@ -1,171 +1,205 @@
+const fetch = require('node-fetch');
+const config = require('../config');
+const { cmd } = require('../command');
 
-const util = require('util');
-const fs = require('fs-extra');
-const { zokou } = require(__dirname + "/../framework/zokou");
-const { format } = require(__dirname + "/../framework/mesfonctions");
-const os = require("os");
-const moment = require("moment-timezone");
-const s = require(__dirname + "/../set");
-const more = String.fromCharCode(8206)
-const readmore = more.repeat(4001)
+cmd({
+    pattern: "repo",
+    alias: ["sc", "script", "info"],
+    desc: "Fetch GitHub repository information",
+    react: "📂",
+    category: "info",
+    filename: __filename,
+},
+async (conn, mek, m, { from, reply }) => {
+    const githubRepoURL = 'https://github.com/MAFIAADEEL/MAFIA-MD.git';
 
-zokou({ nomCom: "script", categorie: "General" }, async (dest, zk, commandeOptions) => {
-    let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
-    let { cm } = require(__dirname + "/../framework//zokou");
-    var coms = {};
-    var mode = "public";
-    
-    if ((s.MODE).toLocaleLowerCase() != "yes") {
-        mode = "private";
-    }
-
-
-    
-
-    cm.map(async (com, index) => {
-        if (!coms[com.categorie])
-            coms[com.categorie] = [];
-        coms[com.categorie].push(com.nomCom);
-    });
-
-    moment.tz.setDefault('Etc/GMT');
-
-// Créer une date et une heure en GMT
-const temps = moment().format('HH:mm:ss');
-const date = moment().format('DD/MM/YYYY');
-
-  let infoMsg =  `
-   *MAFIA-MD IMPORTANT INFO* 
-❒═════════════════❒
-*GITHUB LINK*
-> https://github.com/MAFIAADEEL/MAFIA-MD
-
-*WHATSAPP CHANNEL*
-> https://whatsapp.com/channel/0029VakJs4YJkK7BYQF1Wp1g
-⁠
-╭══════════════════⊷❍
-│❒⁠⁠⁠⁠ *RAM* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-│❒⁠⁠⁠⁠ *DEV* : *Rahmani*
-╰══════════════════⊷❍
-`;
-    
-let menuMsg = `
-❒═══════════❒
-       *MAFIA-MD*
-❒═══════════❒`;
-
-   var lien = mybotpic();
-
-   if (lien.match(/\.(mp4|gif)$/i)) {
     try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *MafiaMd*, déveloper Rahmani" , gifPlayback : true }, { quoted: ms });
+        const [, username, repoName] = githubRepoURL.match(/github\.com\/([^/]+)\/([^/]+)/);
+        const response = await fetch(`https://api.github.com/repos/${username}/${repoName}`);
+        
+        if (!response.ok) throw new Error(`GitHub API error: ${response.status}`);
+        const repoData = await response.json();
+
+        // Format 1: Classic Box
+        const style1 = `╭───『 ${config.BOT_NAME} REPO 』───⳹
+│
+│ 📦 *Repository*: ${repoData.name}
+│ 👑 *Owner*: ${repoData.owner.login}
+│ ⭐ *Stars*: ${repoData.stargazers_count}
+│ ⑂ *Forks*: ${repoData.forks_count}
+│ 🔗 *URL*: ${repoData.html_url}
+│
+│ 📝 *Description*:
+│ ${repoData.description || 'No description'}
+│
+╰────────────────⳹
+> ${config.DESCRIPTION}`;
+
+        // Format 2: Minimalist
+        const style2 = `•——[ GITHUB INFO ]——•
+  │
+  ├─ 🏷️ ${repoData.name}
+  ├─ 👤 ${repoData.owner.login}
+  ├─ ✨ ${repoData.stargazers_count} Stars
+  ├─ ⑂ ${repoData.forks_count} Forks
+  │
+  •——[ ${config.BOT_NAME} ]——•
+  > ${config.DESCRIPTION}`;
+
+        // Format 3: Fancy Borders
+        const style3 = `▄▀▄▀▄ REPOSITORY INFO ▄▀▄▀▄
+
+  ♢ *Project*: ${repoData.name}
+  ♢ *Author*: ${repoData.owner.login}
+  ♢ *Stars*: ${repoData.stargazers_count} ✨
+  ♢ *Forks*: ${repoData.forks_count} ⑂
+  ♢ *Updated*: ${new Date(repoData.updated_at).toLocaleDateString()}
+  
+  🔗 ${repoData.html_url}
+  
+  > ${config.DESCRIPTION}`;
+
+        // Format 4: Code Style
+        const style4 = `┌──────────────────────┐
+│  ⚡ ${config.BOT_NAME} REPO  ⚡  │
+├──────────────────────┤
+│ • Name: ${repoData.name}
+│ • Owner: ${repoData.owner.login}
+│ • Stars: ${repoData.stargazers_count}
+│ • Forks: ${repoData.forks_count}
+│ • URL: ${repoData.html_url}
+│ • Desc: ${repoData.description || 'None'}
+└──────────────────────┘
+> ${config.DESCRIPTION}`;
+
+        // Format 5: Modern Blocks
+        const style5 = `▰▰▰▰▰ REPO INFO ▰▰▰▰▰
+
+  🏷️  *${repoData.name}*
+  👨‍💻  ${repoData.owner.login}
+  
+  ⭐ ${repoData.stargazers_count}  ⑂ ${repoData.forks_count}
+  🔗 ${repoData.html_url}
+  
+  📜 ${repoData.description || 'No description'}
+  
+  > ${config.DESCRIPTION}`;
+
+        // Format 6: Retro Terminal
+        const style6 = `╔══════════════════════╗
+║   ${config.BOT_NAME} REPO    ║
+╠══════════════════════╣
+║ > NAME: ${repoData.name}
+║ > OWNER: ${repoData.owner.login}
+║ > STARS: ${repoData.stargazers_count}
+║ > FORKS: ${repoData.forks_count}
+║ > URL: ${repoData.html_url}
+║ > DESC: ${repoData.description || 'None'}
+╚══════════════════════╝
+> ${config.DESCRIPTION}`;
+
+        // Format 7: Elegant
+        const style7 = `┌───────────────┐
+│  📂  REPO  │
+└───────────────┘
+│
+│ *Project*: ${repoData.name}
+│ *Author*: ${repoData.owner.login}
+│
+│ ✨ ${repoData.stargazers_count} Stars
+│ ⑂ ${repoData.forks_count} Forks
+│
+│ 🔗 ${repoData.html_url}
+│
+┌───────────────┐
+│  📝  DESC  │
+└───────────────┘
+${repoData.description || 'No description'}
+
+> ${config.DESCRIPTION}`;
+
+        // Format 8: Social Media Style
+        const style8 = `✦ ${config.BOT_NAME} Repository ✦
+
+📌 *${repoData.name}*
+👤 @${repoData.owner.login}
+
+⭐ ${repoData.stargazers_count} Stars | ⑂ ${repoData.forks_count} Forks
+🔄 Last updated: ${new Date(repoData.updated_at).toLocaleDateString()}
+
+🔗 GitHub: ${repoData.html_url}
+
+${repoData.description || 'No description available'}
+
+> ${config.DESCRIPTION}`;
+
+        // Format 9: Fancy List
+        const style9 = `╔♫═🎧═♫══════════╗
+   ${config.BOT_NAME} REPO
+╚♫═🎧═♫══════════╝
+
+•・゜゜・* ✧  *・゜゜・•
+ ✧ *Name*: ${repoData.name}
+ ✧ *Owner*: ${repoData.owner.login}
+ ✧ *Stars*: ${repoData.stargazers_count}
+ ✧ *Forks*: ${repoData.forks_count}
+•・゜゜・* ✧  *・゜゜・•
+
+🔗 ${repoData.html_url}
+
+${repoData.description || 'No description'}
+
+> ${config.DESCRIPTION}`;
+
+        // Format 10: Professional
+        const style10 = `┏━━━━━━━━━━━━━━━━━━┓
+┃  REPOSITORY REPORT  ┃
+┗━━━━━━━━━━━━━━━━━━┛
+
+◈ Project: ${repoData.name}
+◈ Maintainer: ${repoData.owner.login}
+◈ Popularity: ★ ${repoData.stargazers_count} | ⑂ ${repoData.forks_count}
+◈ Last Update: ${new Date(repoData.updated_at).toLocaleDateString()}
+◈ URL: ${repoData.html_url}
+
+Description:
+${repoData.description || 'No description provided'}
+
+> ${config.DESCRIPTION}`;
+
+        const styles = [style1, style2, style3, style4, style5, style6, style7, style8, style9, style10];
+        const selectedStyle = styles[Math.floor(Math.random() * styles.length)];
+
+        // Send image with repo info
+        await conn.sendMessage(from, {
+            image: { url: config.MENU_IMAGE_URL || 'https://i.postimg.cc/6qsWSKXV/Screenshot-20250505-154041-1-1.jpg' },
+            caption: selectedStyle,
+            contextInfo: { 
+                mentionedJid: [m.sender],
+                forwardingScore: 999,
+                isForwarded: true,
+                forwardedNewsletterMessageInfo: {
+                    newsletterJid: '120363354023106228@newsletter',
+                    newsletterName: config.OWNER_NAME || 'MAFIA ADEEL',
+                    serverMessageId: 143
+                }
+            }
+        }, { quoted: mek });
+
+        // Send audio
+        await conn.sendMessage(from, {
+            audio: { url: 'https://github.com/JawadYT36/KHAN-DATA/raw/refs/heads/main/autovoice/menunew.m4a' },
+            mimetype: 'audio/mp4',
+            ptt: true,
+            contextInfo: { 
+                mentionedJid: [m.sender],
+                forwardingScore: 999,
+                isForwarded: true
+            }
+        }, { quoted: mek });
+
+    } catch (error) {
+        console.error("Repo command error:", error);
+        reply(`❌ Error: ${error.message}`);
     }
-    catch (e) {
-        console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
-    }
-} 
-// Vérification pour .jpeg ou .png
-else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
-    try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *MAFIAMd*, déveloper MAFIA ADEEL" }, { quoted: ms });
-    }
-    catch (e) {
-        console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
-    }
-} 
-else {
-    
-    repondre(infoMsg + menuMsg);
-    
-}
-
-}); 
-
-
-/*const util = require('util');
-const fs = require('fs-extra');
-const { zokou } = require(__dirname + "/../framework/zokou");
-const { format } = require(__dirname + "/../framework/mesfonctions");
-const os = require("os");
-const moment = require("moment-timezone");
-const s = require(__dirname + "/../set");
-const more = String.fromCharCode(8206)
-const readmore = more.repeat(4001)
-
-zokou({ nomCom: "script", categorie: "General" }, async (dest, zk, commandeOptions) => {
-    let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
-    let { cm } = require(__dirname + "/../framework//zokou");
-    var coms = {};
-    var mode = "public";
-    
-    if ((s.MODE).toLocaleLowerCase() != "yes") {
-        mode = "private";
-    }
-
-
-    
-
-    cm.map(async (com, index) => {
-        if (!coms[com.categorie])
-            coms[com.categorie] = [];
-        coms[com.categorie].push(com.nomCom);
-    });
-
-    moment.tz.setDefault('Etc/GMT');
-
-// Créer une date et une heure en GMT
-const temps = moment().format('HH:mm:ss');
-const date = moment().format('DD/MM/YYYY');
-
-  let infoMsg =  `
-   *MAFIA-MD IMPORTANT INFO* 
-❒───────────────────❒
-*GITHUB LINK*
-> https://github.com/MAFIAADEEL/MAFIA-MD
-
-*WHATSAPP CHANNEL*
-> https://whatsapp.com/channel/0029VakJs4YJkK7BYQF1Wp1g
-
-*FOR MORE INFO TAP ON THE LINK BELOW*
-> https://github.com/MAFIAADEEL/MAFIA-MD-INFO⁠
-╭───────────────────❒
-│❒⁠⁠⁠⁠ *RAM* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-│❒⁠⁠⁠⁠ *DEV* : *ADEEL*
-⁠⁠⁠⁠╰───────────────────❒
-  `;
-    
-let menuMsg = `
-     MAFIA-MD
-
-❒────────────────────❒`;
-
-   var lien = mybotpic();
-
-   if (lien.match(/\.(mp4|gif)$/i)) {
-    try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *MAFIAMd*, déveloper MAFIA Md" , gifPlayback : true }, { quoted: ms });
-    }
-    catch (e) {
-        console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
-    }
-} 
-// Vérification pour .jpeg ou .png
-else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
-    try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *MAFIAMd*, déveloper MAFIA XMd" }, { quoted: ms });
-    }
-    catch (e) {
-        console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
-    }
-} 
-else {
-    
-    repondre(infoMsg + menuMsg);
-    
-}
-
-});*/
+});
