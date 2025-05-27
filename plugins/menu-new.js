@@ -24,16 +24,16 @@ cmd({
 ╰━━━━━━━━━━━━━━━┈⊷
 ╭━━〔 *Menu List* 〕━━┈⊷
 ┃◈╭─────────────·๏
-┃◈│1️⃣  📥 *Download Menu*
-┃◈│2️⃣  👥 *Group Menu*
-┃◈│3️⃣  😄 *Fun Menu*
-┃◈│4️⃣  👑 *Owner Menu*
-┃◈│5️⃣  🤖 *AI Menu*
-┃◈│6️⃣  🎎 *Anime Menu*
-┃◈│7️⃣  🔄 *Convert Menu*
-┃◈│8️⃣  📌 *Other Menu*
-┃◈│9️⃣  💞 *Reactions Menu*
-┃◈│🔟  🏠 *Main Menu*
+┃◈│   *Download Menu*
+┃◈│   *Group Menu*
+┃◈│   *Fun Menu*
+┃◈│   *Owner Menu*
+┃◈│   *AI Menu*
+┃◈│   *Anime Menu*
+┃◈│   *Convert Menu*
+┃◈│   *Other Menu*
+┃◈│   *Reactions Menu*
+┃◈│   *Main Menu*
 ┃◈╰───────────┈⊷
 ╰──────────────┈⊷
 > ${config.DESCRIPTION}`;
@@ -55,7 +55,7 @@ cmd({
                 return await conn.sendMessage(
                     from,
                     {
-                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/xn3gm2.jpg' },
+                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/niqj8s.jpg' },
                         caption: menuCaption,
                         contextInfo: contextInfo
                     },
