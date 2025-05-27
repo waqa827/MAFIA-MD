@@ -6,7 +6,6 @@
   <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=600&size=25&duration=4000&pause=1000&color=00F7FF&center=true&vCenter=true&width=500&lines=ULTIMATE+WHATSAPP+BOT;MULTI-DEVICE+SUPPORT;POWERED+BY+MAFIA-ADEEL;FAST++SECURE++RELIABLE" alt="Animated Typing SVG" />
 </p>
 
-<img src="https://files.catbox.moe/niqj8s.jpg" height="90" width="100%">
 
 
 
@@ -22,7 +21,7 @@
 
 
 <div align="center">
-  <img src="https://ibb.co/Y9shNn6" width="400" style="border-radius: 20px; box-shadow: 0 0 25px #0088ff;"/>
+  <img src="https://files.catbox.moe/0qzexx.jpg" width="400" style="border-radius: 20px; box-shadow: 0 0 25px #0088ff;"/>
 </div>
 
 <div align="center">
