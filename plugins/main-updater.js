@@ -26,7 +26,7 @@ cmd({
         const currentHash = await getCommitHash();
 
         if (latestCommitHash === currentHash) {
-            return reply("✅ Your MAFIA-MD bot is already up-to-date!");
+            return reply("✅ Your MAFIA-MD bot is already up-to-date! BY MAFIA ADEEL");
         }
 
         await reply("🚀 Updating MAFIA-MD Bot...");
@@ -44,7 +44,7 @@ cmd({
 
         // Copy updated files, preserving config.js and app.json
         await reply("🔄 Replacing files...");
-        const sourcePath = path.join(extractPath, "KHAN-MD-main");
+        const sourcePath = path.join(extractPath, "MAFIA-MD-main");
         const destinationPath = path.join(__dirname, '..');
         copyFolderSync(sourcePath, destinationPath);
 
