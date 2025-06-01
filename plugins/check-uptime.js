@@ -119,8 +119,8 @@ ${config.DESCRIPTION}`;
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363354023106228@newsletter',
-                    newsletterName: config.OWNER_NAME || '𝙼𝙰𝙵𝙸𝙰 𝙰𝙳𝙴𝙴𝙻',
+                    newsletterJid: '120363300351654980@newsletter',
+                    newsletterName: config.OWNER_NAME || 'ᴍᴀғɪᴀ ᴀᴅᴇᴇʟ',
                     serverMessageId: 143
                 }
             }
