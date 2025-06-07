@@ -16,6 +16,8 @@ cmd({
 ┃★│ 👑 Owner : *${config.OWNER_NAME}*
 ┃★╰──────────────
 ╰━━━━━━━━━━━━━━━┈⊷
+📋 *ᴄʜᴏᴏsᴇ ᴀ ᴄᴀᴛᴇɢᴏʀʏ ᴛᴏ ᴇxᴘʟᴏʀᴇ:*
+> _ʀᴇᴘʟʏ ᴡɪᴛʜ ᴛʜᴇ ᴍᴀᴛᴄʜɪɴɢ ɴᴜᴍʙᴇʀ ᴛᴏ ᴏᴘᴇɴ ᴛʜᴇ ᴍᴇɴᴜ_
  ➦✧ -〘 *ʙᴏᴛ ᴍᴇɴᴜ* 〙 -  ✧━┈⊷
 ┃✧ ➦♦⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆✧━┈⊷
 ┃✧│  ❶  *ᴅᴏᴡɴʟᴏᴅᴇᴅ ᴍᴇɴᴜ*
@@ -79,6 +81,20 @@ cmd({
             }
         };
 
+        // Function to send menu audio with timeout
+        const sendMenuAudio = async () => {
+            try {
+                await new Promise(resolve => setTimeout(resolve, 1000)); // Small delay after image
+                await conn.sendMessage(from, {
+                    audio: { url: 'https://files.catbox.moe/wzodz1.mp3' },
+                    mimetype: 'audio/mp4',
+                    ptt: true,
+                }, { quoted: mek });
+            } catch (e) {
+                console.log('Audio send failed, continuing without it');
+            }
+        };
+        
         // Send image first, then audio sequentially
         let sentMsg;
         try {
