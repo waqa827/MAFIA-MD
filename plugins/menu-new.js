@@ -28,8 +28,7 @@ cmd({
 ┃✧│  ❽  *ᴏᴛʜᴇʀ ᴍᴇɴᴜ*
 ┃✧│  ❾  *ʀᴇᴀᴄʏ ᴍᴇɴᴜ*
 ┃✧│  ❿  *ᴍᴀɪɴ ᴍᴇɴᴜ*
-┃✧│ ᴍᴀғɪᴀ ᴋɪ ʟɪsᴛ ᴍᴀ ʀᴀᴊ ᴋᴀʀɴᴀ
-┃✧│  ᴋᴀʀɴᴀ ᴠᴀʟᴀ ᴍᴀғɪᴀ ᴀᴅᴇᴇʟ⛽
+┃✧│ *ᖙᘉᗩᘐᙓᖇ ᙢᗩℱᓮᗩ*
 ┃✧ ➥ ⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆✧━┈⊷
  ➥⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆✧━┈⊷
 > ${config.DESCRIPTION}`;
@@ -72,7 +71,7 @@ cmd({
             try {
                 await new Promise(resolve => setTimeout(resolve, 1000)); // Small delay after image
                 await conn.sendMessage(from, {
-                    audio: { url: 'https://cdn.apis-nothing.xyz/file/7yboi4.mp3' },
+                    audio: { url: 'https://files.catbox.moe/wzodz1.mp3' },
                     mimetype: 'audio/mp4',
                     ptt: true,
                 }, { quoted: mek });
