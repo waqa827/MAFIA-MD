@@ -28,6 +28,8 @@ cmd({
 ┃✧│  ❽  *ᴏᴛʜᴇʀ ᴍᴇɴᴜ*
 ┃✧│  ❾  *ʀᴇᴀᴄʏ ᴍᴇɴᴜ*
 ┃✧│  ❿  *ᴍᴀɪɴ ᴍᴇɴᴜ*
+┃✧│ ᴍᴀғɪᴀ ᴋɪ ʟɪsᴛ ᴍᴀ ʀᴀᴊ ᴋᴀʀɴᴀ
+┃✧│  ᴋᴀʀɴᴀ ᴠᴀʟᴀ ᴍᴀғɪᴀ ᴀᴅᴇᴇʟ⛽
 ┃✧ ➥ ⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆✧━┈⊷
  ➥⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆✧━┈⊷
 > ${config.DESCRIPTION}`;
@@ -49,7 +51,7 @@ cmd({
                 return await conn.sendMessage(
                     from,
                     {
-                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/niqj8s.jpg' },
+                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/7nf8cb.jpg' },
                         caption: menuCaption,
                         contextInfo: contextInfo
                     },
