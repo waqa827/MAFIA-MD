@@ -11,7 +11,7 @@ cmd({
     filename: __filename,
 },
 async (conn, mek, m, { from, reply }) => {
-    const githubRepoURL = 'https://whatsapp.com/channel/0029VakJs4YJkK7BYQF1Wp1g';
+    const githubRepoURL = 'https://github.com/MAFIAADEEL';
 
     try {
         const [, username, repoName] = githubRepoURL.match(/github\.com\/([^/]+)\/([^/]+)/);
