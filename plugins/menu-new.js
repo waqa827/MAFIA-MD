@@ -192,6 +192,7 @@ cmd({
 ┃★│ • ship @user1 @user2
 ┃★│ • character
 ┃★│ • pickup
+┃★│ • .boom
 ┃★│ • joke
 ┃★╰──────────────
 ┃★╭──────────────
