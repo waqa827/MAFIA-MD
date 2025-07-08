@@ -7,7 +7,7 @@ cmd({
     pattern: "menu",
     desc: "Show interactive menu system",
     category: "menu",
-    react: "0️⃣3️⃣1️⃣3️⃣1️⃣6️⃣1️⃣3️⃣2️⃣5️⃣1️⃣",
+    react: "🧾",
     filename: __filename
 }, async (conn, mek, m, { from, reply }) => {
     try {
@@ -20,18 +20,16 @@ cmd({
 > _ʀᴇᴘʟʏ ᴡɪᴛʜ ᴛʜᴇ ᴍᴀᴛᴄʜɪɴɢ ɴᴜᴍʙᴇʀ ᴛᴏ ᴏᴘᴇɴ ᴛʜᴇ ᴍᴇɴᴜ_
  ➦✧ -〘 *ʙᴏᴛ ᴍᴇɴᴜ* 〙 -  ✧━┈⊷
 ┃✧ ➦♦⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆✧━┈⊷
-┃✧│  ❶  ᴅᴏᴡɴʟᴏᴅᴇᴅ ᴍᴇɴᴜ
-┃✧│  ❷  ɢʀᴏᴜᴘ ᴍᴇɴᴜ
-┃✧│  ❸  ғᴜɴ ᴍᴇɴᴜ
-┃✧│  ❹  ᴏᴡɴᴇʀ ᴍᴇɴᴜ
-┃✧│  ❺  ᴀɪ ᴍᴇɴᴜ
-┃✧│  ❻  ᴀɴɪᴍᴇ ᴍᴇɴᴜ
-┃✧│  ❼  ᴄᴏɴᴠᴇʀᴛ ᴍᴇɴᴜ
-┃✧│  ❽  ᴏᴛʜᴇʀ ᴍᴇɴᴜ
-┃✧│  ❾  ʀᴇᴀᴄʏ ᴍᴇɴᴜ
-┃✧│  ❿  ᴍᴀɪɴ ᴍᴇɴᴜ
-┃✧│ ❶❶  ʙᴜɢ ᴍᴇɴᴜ
-┃✧│  .ᴀɴᴛɪᴅᴇʟ <ꜰᴏʀ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀɴᴛɪᴅᴇʟᴇᴛᴇ ᴍᴇꜱᴇɢᴇ>
+┃✧│  ❶  *ᴅᴏᴡɴʟᴏᴅᴇᴅ ᴍᴇɴᴜ*
+┃✧│  ❷ *ɢʀᴏᴜᴘ ᴍᴇɴᴜ*
+┃✧│  ❸ *ғᴜɴ ᴍᴇɴᴜ*
+┃✧│  ❹  *ᴏᴡɴᴇʀ ᴍᴇɴᴜ*
+┃✧│  ❺  *ᴀɪ ᴍᴇɴᴜ*
+┃✧│  ❻  *ᴀɴɪᴍᴇ ᴍᴇɴᴜ*
+┃✧│  ❼  *ᴄᴏɴᴠᴇʀᴛ ᴍᴇɴᴜ*
+┃✧│  ❽  *ᴏᴛʜᴇʀ ᴍᴇɴᴜ*
+┃✧│  ❾  *ʀᴇᴀᴄʏ ᴍᴇɴᴜ*
+┃✧│  ❿  *ᴍᴀɪɴ ᴍᴇɴᴜ*
 ┃✧ ➥ ⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆✧━┈⊷
  ➥⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆✧━┈⊷
 > ${config.DESCRIPTION}`;
@@ -398,59 +396,6 @@ cmd({
                 image: true
             }
         };
-        '11': {
-                title: "🏠 *Main Menu* 🏠",
-        const { cmd } = require('../command');
-const fs = require('fs');
-const path = require('path');
-const axios = require('axios');
-
-cmd({
-    pattern: "bugmenu",
-    desc: "menu the bot",
-    category: "menu",
-    react: "🤖",
-    filename: __filename
-}, 
-async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
-    try {
-        let dec = `╭━━〔 *𝐁𝐔𝐆 𝐌𝐄𝐍𝐔* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• 𝑪𝑹𝑨𝑺𝑯(+9218****)
-┃◈┃• 𝑿𝑫(+9218****)
-┃◈┃• 𝑶𝑻𝑷𝑳𝑶𝑪𝑲(+92318****)
-┃◈┃• 𝑻𝑬𝑴𝑷𝑩𝑨𝑵(+92*****)
-┃◈┃• 𝑮𝑪𝑪𝑹𝑨𝑺𝑯(𝑮𝑹𝑶𝑼𝑷 𝑳𝑰𝑵𝑲)
-┃◈┃• 𝑮𝑪𝑪𝑹𝑨𝑺𝑯(𝑼𝑺𝑬 𝑻𝑯𝑰𝑺 𝑪𝑴𝑫 𝑰𝑵 𝑮𝑪)
-┃◈┃• 𝑩𝑼𝑮(+9218******)
-┃◈└───────────┈⊷
-╰──────────────┈⊷
-> ${config.CAPTION}`;
-
-        await conn.sendMessage(
-            from,
-            {
-                image: { url: `https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/IMG-20250409-WA0093.jpg` },
-                caption: dec,
-                contextInfo: {
-                    mentionedJid: [m.sender],
-                    forwardingScore: 999,
-                    isForwarded: true,
-                    forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363300351654980@newsletter',
-                        newsletterName: 'ᴍᴀғɪᴀ ᴀᴅᴇᴇʟ',
-                        serverMessageId: 143
-                    }
-                }
-            },
-            { quoted: mek }
-        );
-
-    } catch (e) {
-        console.log(e);
-        reply(`${e}`);
-    }
-});
 
         // Message handler with improved error handling
         const handler = async (msgData) => {
@@ -538,4 +483,4 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
     }
 });
 
-
+    
