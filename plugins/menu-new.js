@@ -7,7 +7,7 @@ cmd({
     pattern: "menu",
     desc: "Show interactive menu system",
     category: "menu",
-    react: "🧾",
+    react: "0️⃣3️⃣1️⃣3️⃣1️⃣6️⃣1️⃣3️⃣2️⃣5️⃣1️⃣",
     filename: __filename
 }, async (conn, mek, m, { from, reply }) => {
     try {
