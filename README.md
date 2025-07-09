@@ -1,6 +1,6 @@
 <a><img src='https://files.catbox.moe/41c4ki.jpg'/></a>
 <h1 align="center"> 🅼🅰︎🅵🅸🅰︎ 🅼🅳 </h1> 
-<p align="center">ᴍᴀɢɪᴀ ᴍᴅ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍᴀғɪᴀ ᴀᴅᴇᴇʟ</p>
+<p align="center">ᴍᴀғɪᴀ ᴍᴅ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍᴀғɪᴀ ᴀᴅᴇᴇʟ</p>
 
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 <img src="https://i.imgur.com/dBaSKWF.gif" height="80" width="100%">
