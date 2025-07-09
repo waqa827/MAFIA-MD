@@ -7,17 +7,10 @@
 <img src="https://i.imgur.com/dBaSKWF.gif" height="100" width="100%">
 <img src="https://i.imgur.com/dBaSKWF.gif" height="110" width="100%">
 
------------
-
-
-
------------
------------
-
 **`❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀`**
 
 -----------
-## 🛰️ Deployment Steps
+## 🅳🅴🅿︎🅻🅾︎🆈🅼🅴🅽🆃 🆂🆃🅴🅿︎🆂♦︎
 
 <div style="background: #000000; border: 1px solid #00ffff; border-radius: 15px; padding: 20px; box-shadow: 0 0 15px #00ffff; margin-bottom: 30px;">
     
@@ -35,7 +28,7 @@
 <div style="background: #111111; padding: 15px; border-radius: 10px; border-left: 3px solid #00ffff;">
   
 --- 
-> **PAIRING LINK (01)**
+> **PAIRING LINK**
   <a href='https://mafia-md-pair-web.onrender.com/' target="_blank">
     <img src='https://img.shields.io/badge/PAIR_CODE_1-00FFFF?style=for-the-badge&logo=matrix&logoColor=white&labelColor=000000'/>
   </a></br>
@@ -45,12 +38,10 @@
 
 
 
-## 📡 DEPLOYMENT OPTIONS
+## ➦DEPLOYMENT OPTIONS
 
-<div align="center">
-  <table>
-    <tr>
-      <td><a href="https://dashboard.heroku.com/new?template=https://github.com/MAFIAADEEL/MAFIA-MD" target="_blank"><img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white&labelColor=red&color=00ffff"/></a></td>
+### <h4 align="">1. HEROKU</h4>
+<p style="text-align: center; font-size: 1.2em;">
      
 <table align="center">
   <tr>
