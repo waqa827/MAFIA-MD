@@ -3,6 +3,9 @@
 <p align="center">ᴍᴀɢɪᴀ ᴍᴅ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍᴀғɪᴀ ᴀᴅᴇᴇʟ</p>
 
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
+<img src="https://i.imgur.com/dBaSKWF.gif" height="80" width="100%">
+<img src="https://i.imgur.com/dBaSKWF.gif" height="100" width="100%">
+<img src="https://i.imgur.com/dBaSKWF.gif" height="110" width="100%">
 
 -----------
 
