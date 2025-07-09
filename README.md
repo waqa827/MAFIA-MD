@@ -2,7 +2,7 @@
 
 -----------
 
-![Image](https://files.catbox.moe/41c4ki.jpg)
+
 
 -----------
 -----------
