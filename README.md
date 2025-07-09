@@ -41,9 +41,10 @@
 ## ➦DEPLOYMENT OPTIONS
 
 ### <h2 align="">1. HEROKU</h2>
- *_DEPLOY ON HEROKU✅_*
-5. °[`HEROKU`](https://dashboard.heroku.com/new-app?template=https://github.com/MAFIAADEEL/MAFIA-MD)
-
+ <a href='https://dashboard.heroku.com/new-app?template=https://github.com/MAFIAADEEL/MAFIA-MD' target="_blank">
+    <img src='https://img.shields.io/badge/HEROKU-DEPLOY-00FFFF?style=for-the-badge&logo=matrix&logoColor=white&labelColor=000000'/>
+  </a></br>
+  
 
      
 <table align="center">
