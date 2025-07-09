@@ -1,35 +1,12 @@
 <p align="center">
-  <h1 align="center" style="font-family: 'Orbitron', sans-serif; text-shadow: 0 0 10px #00ffff, 0 0 20px #0088ff;">𝗠𝗔𝗙𝗜𝗔-𝗠𝗗</h1>
-</p>
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=600&size=25&duration=4000&pause=1000&color=00F7FF&center=true&vCenter=true&width=500&lines=ULTIMATE+WHATSAPP+BOT;MULTI-DEVICE+SUPPORT;POWERED+BY+MAFIA-ADEEL;FAST++SECURE++RELIABLE" alt="Animated Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=800&size=25&duration=4000&pause=1000&color=red&center=true&vCenter=true&width=500&lines=WELL-COME-MAFIA-MD-WHATSAPP-BOT" alt="Animated Typing SVG" />
 </p>
 
 
 
 
-> **Current Bot Version `5.0.0`**  
-
----
-
-*Dont forget to fork & star repo*
-
----
-
-# ![MAFIA-MD](https://readme-typing-svg.demolab.com?font=Roboto&size=26&weight=600&pause=1000&color=FF69B4&center=true&vCenter=true&width=600&lines=✨+ASSALAMUALAIKUM!+WELCOME+TO+MAFIA-MD;🔥+ULTIMATE+WHATSAPP+BOT+WITH+300%2B+FEATURES;⚡+FASTEST+•+MOST+ADVANCED+•+USER+FRIENDLY)
 
 
-<div align="center">
-  <img src="https://files.catbox.moe/0qzexx.jpg" width="400" style="border-radius: 20px; box-shadow: 0 0 25px #0088ff;"/>
-</div>
-
-<div align="center">
-  <img src="https://github.com/MAFIAADEEL/MAFIA-MD/blob/main/assets/divider.gif?raw=true" width="100%"/>
-</div>
-<div align="center">
-  <img src="https://github.com/MAFIAADEEL/MAFIA-MD/blob/main/assets/deployheader.gif?raw=true" width="80%"/>
-</div>
 
 ## 🛰️ Deployment Steps
 
@@ -57,19 +34,7 @@
   <div style="height: 10px;"></div>
   
 
-  
-  ---
-  <p style="color: #aaaaaa; font-size: 12px; margin-top: 10px;">
-    <img src="https://github.com/MAFIAADEEL/MAFIA-MD/blob/main/assets/warning.gif?raw=true" width="15"/> 
-    Connection issues may require VPN activation
-  </p>
-</div>
 
-</div>
-
-<div align="center">
-  <img src="https://github.com/MAFIAADEEL/MAFIA-MD/blob/main/assets/techwave.gif?raw=true" width="80%"/>
-</div>
 
 ## 📡 DEPLOYMENT OPTIONS
 
@@ -77,24 +42,12 @@
   <table>
     <tr>
       <td><a href="https://dashboard.heroku.com/new?template=https://github.com/MAFIAADEEL/MAFIA-MD" target="_blank"><img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white&labelColor=000000&color=00ffff"/></a></td>
-      <td><a href="https://talkdrove.com" target="_blank"><img src="https://img.shields.io/badge/TalkDrove-6971FF?style=for-the-badge&logo=github&logoColor=white&labelColor=000000"/></a></td>
-    </tr>
-    <tr>
-      <td><a href="https://app.koyeb.com/services/deploy?type=git&repository=MAFIAADEEL/MAFIA-MD" target="_blank"><img src="https://img.shields.io/badge/Koyeb-FF009D?style=for-the-badge&logo=koyeb&logoColor=white&labelColor=000000"/></a></td>
-      <td><a href="https://railway.app/new" target="_blank"><img src="https://img.shields.io/badge/Railway-FF8700?style=for-the-badge&logo=railway&logoColor=white&labelColor=000000"/></a></td>
-    </tr>
-    <tr>
-      <td><a href="https://dashboard.render.com/web/new" target="_blank"><img src="https://img.shields.io/badge/Render-000000?style=for-the-badge&logo=render&logoColor=white&labelColor=000000&color=00ffaa"/></a></td>
-      <td><a href="https://app.netlify.com/" target="_blank"><img src="https://img.shields.io/badge/Netlify-CC00FF?style=for-the-badge&logo=huggingface&logoColor=white&labelColor=000000"/></a></td>
-    </tr>
-  </table>
-</div>
-
+     
 <table align="center">
   <tr>
     <td>
-      <a href="https://whatsapp.com/channel/0029VakJs4YJkK7BYQF1Wp1g/1368" target="_blank">
-        <img alt="View Workflow Codes" src="https://img.shields.io/badge/View-Workflow%20Codes-FF0076?style=for-the-badge&logo=githubactions&logoColor=white"/>
+      <a href="https://whatsapp.com/channel/0029VavP4nX0G0XggHzhVg0R" target="_blank">
+        <img alt="JOIN SPOT" src="https://img.shields.io/badge/View-Workflow%20Codes-FF0076?style=for-the-badge&logo=githubactions&logoColor=white"/>
       </a>
     </td>
   </tr>
@@ -104,19 +57,7 @@
   <img src="https://github.com/MAFIAADEEL/MAFIA-MD/blob/main/assets/techwave.gif?raw=true" width="100%"/>
 </div>
 
-## 🌟 BOT FEATURES
 
-```bash
-✦ Antidelete, Antiviewonce, Antilink
-✦ High speed YT, Tiktok, FB, IG Downloaders
-✦ 10+ AI models + Image anlysis AI
-✦ Fast low latensie, Powerful
-✦ Futuristic Cool ICY UI
-```
-
-<div align="center">
-  <img src="https://github.com/MAFIAADEEL/MAFIA-MD/blob/main/assets/cyberdivider.gif?raw=true" width="100%"/>
-</div>
 
 ## 🪀  SUPPORT CHANNEL
 
@@ -130,29 +71,13 @@
   <img src="https://github.com/MAFIAADEEL/MAFIA-MD/blob/main/assets/neonpulse.gif?raw=true" width="300"/>
 </div>
 
-## ⚠️ WARNING !
+## 🌟 BOT FEATURES
 
-<div style="background-color: #000000; border-left: 5px solid #ff00ff; padding: 10px; border-radius: 0 15px 15px 0; box-shadow: 0 0 15px #ff00ff;">
-  <h3 style="color: #00ffff; font-family: 'Orbitron', sans-serif;">DISCLAIMER</h3>
-  <p style="color: #ffffff;">This bot is not affiliated with WhatsApp Inc. Use at your own risk. Misuse may result in account bans.</p>
-</div>
-
-<div align="center">
-  <img src="https://github.com/MAFIAADEEL/MAFIA-MD/blob/main/assets/digitalrain.gif?raw=true" width="100%"/>
-</div>
-
-
-
-
-
-## 👑 ADEEL STATUS
-
-```diff
-+ Project Status: Active
-! Version: 5.0.0 Neon Edition
-# License: APACHE
 ```
-
-<div align="center">
-  <img src="https://github.com/MAFIAADEEL/MAFIA-MD/blob/main/assets/endwave.gif?raw=true" width="100%"/>
-</div>
+✦ Antidelete, Antiviewonce, Antilink
+✦ High speed YT, Tiktok, FB, IG Downloaders
+✦ 10+ AI models + Image anlysis AI
+✦ Fast low latensie, Powerful
+✦ Futuristic Cool ICY UI
+✦ boom 💥 add 
+```
