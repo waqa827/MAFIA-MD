@@ -1,13 +1,15 @@
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=800&size=25&duration=4000&pause=1000&color=red&center=true&vCenter=true&width=500&lines=WELL-COME-MAFIA-MD-WHATSAPP-BOT" alt="Animated Typing SVG" />
-</p>
+<img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 
+-----------
 
+![Image](https://github.com/user-attachments/assets/c9f274a2-09d5-465b-a7cb-59d287c193e6)
 
+-----------
+-----------
 
+**`❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀`**
 
-
-
+-----------
 ## 🛰️ Deployment Steps
 
 <div style="background: #000000; border: 1px solid #00ffff; border-radius: 15px; padding: 20px; box-shadow: 0 0 15px #00ffff; margin-bottom: 30px;">
