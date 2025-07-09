@@ -40,8 +40,10 @@
 
 ## ➦DEPLOYMENT OPTIONS
 
-### <h4 align="">1. HEROKU</h4>
+### <h2 align="">1. HEROKU</h2>
 <p style="text-align: center; font-size: 1.2em;">
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/MAFIAADEEL/MAFIA-MD)
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
      
 <table align="center">
   <tr>
