@@ -1,7 +1,7 @@
 {
   "name": "MAFIA-MD",
-  "version": "4.0.0",
-  "description": "A WhatsApp Bot Created By MAFIA ADEEL",
+  "version": "4.5.0",
+  "description": "A WhatsApp Bot Created By MAFIA-MD",
   "main": "index.js",
   "scripts": {
     "start": "pm2 start index.js --deep-monitoring --attach --name MAFIA-MD",
