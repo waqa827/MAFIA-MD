@@ -53,7 +53,7 @@ async (conn, mek, m, { from, sender, pushname, reply }) => {
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363300351654980@newsletter',
+                        newsletterJid: '120363374872240664@newsletter',
                         newsletterName: '♥︎𝗠𝙰𝙵𝙸𝙰 𝗔𝙳𝙴𝙴𝙻♥︎',
                         serverMessageId: 143
                     }
@@ -72,7 +72,7 @@ async (conn, mek, m, { from, sender, pushname, reply }) => {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363300351654980@newsletter',
+                    newsletterJid: '120363374872240664@newsletter',
                     newsletterName: 'MAFIA ADEEL',
                     serverMessageId: 143
                 }
@@ -141,7 +141,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363300351654980@newsletter',
+                        newsletterJid: '120363374872240664@newsletter',
                         newsletterName: "MAFIA ADEEL",
                         serverMessageId: 143
                     }
@@ -207,7 +207,7 @@ async (conn, mek, m, { from, quoted, reply }) => {
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363300351654980@newsletter',
+                        newsletterJid: '120363374872240664@newsletter',
                         newsletterName: 'MAFIA ADEEL',
                         serverMessageId: 144
                     }
@@ -290,7 +290,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363300351654980@newsletter',
+                        newsletterJid: '120363374872240664@newsletter',
                         newsletterName: 'MAFIA ADEEL',
                         serverMessageId: 143
                     }
@@ -368,7 +368,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363300351654980@newsletter',
+                        newsletterJid: '120363374872240664@newsletter',
                         newsletterName: 'MAFIA ADEEL',
                         serverMessageId: 143
                     }
@@ -435,7 +435,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363300351654980@newsletter',
+                        newsletterJid: '120363374872240664@newsletter',
                         newsletterName: 'MAFIA ADEEL',
                         serverMessageId: 143
                     }
@@ -506,7 +506,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363300351654980@newsletter',
+                        newsletterJid: '120363374872240664@newsletter',
                         newsletterName: 'MAFIA ADEEL',
                         serverMessageId: 143
                     }
@@ -558,7 +558,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363300351654980@newsletter',
+                        newsletterJid: '120363374872240664@newsletter',
                         newsletterName: 'MAFIA ADEEL',
                         serverMessageId: 143
                     }
@@ -617,7 +617,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363300351654980@newsletter',
+                        newsletterJid: '120363374872240664@newsletter',
                         newsletterName: 'MAFIA ADEEL',
                         serverMessageId: 143
                     }
@@ -678,7 +678,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363300351654980@newsletter',
+                        newsletterJid: '120363374872240664@newsletter',
                         newsletterName: 'MAFIA ADEEL',
                         serverMessageId: 143
                     }
@@ -747,7 +747,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363300351654980@newsletter',
+                        newsletterJid: '120363374872240664@newsletter',
                         newsletterName: 'MAFIA ADEEL',
                         serverMessageId: 143
                     }
@@ -806,7 +806,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363300351654980@newsletter',
+                        newsletterJid: '120363374872240664@newsletter',
                         newsletterName: 'MAFIA ADEEL',
                         serverMessageId: 143
                     }
@@ -820,3 +820,4 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         reply(`${e}`);
     }
 });
+
