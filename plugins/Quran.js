@@ -66,8 +66,8 @@ ${translatedTafsirEnglish.text}`;
           forwardingScore: 999,  
           isForwarded: true,   
           forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363354023106228@newsletter', 
-            newsletterName: 'JawadTechX', 
+            newsletterJid: '120363374872240664@newsletter', 
+            newsletterName: 'ᴍᴀғɪᴀ ᴀᴅᴇᴇʟ', 
             serverMessageId: 143
           }
         }
@@ -456,7 +456,7 @@ async (conn, mek, m, { from, quoted, body,isCmd, command, args, q, isGroup, send
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363354023106228@newsletter',
+                        newsletterJid: '120363374872240664@newsletter',
                         newsletterName: 'MAFIA ADEEL',
                         serverMessageId: 143
                     }
