@@ -16,7 +16,9 @@ async (conn, mek, m, { from, sender, reply }) => {
         const status = `
 ╭───〔 *🤖 ${config.BOT_NAME} STATUS* 〕───◉
 │✨ *Bot is Active & Online!*
-│🫥 *HI GYS ❤️‍🩹 ADEEL SABQI
+│🫥 *HI GYS ❤️‍🩹 ADEEL SABQI*
+|😘 *JOIN MY CHANNEL ✅*
+|😶‍🌫️```https://whatsapp.com/channel/0029VavP4nX0G0XggHzhVg0R```
 │🧠 *Owner:* ${config.OWNER_NAME}
 ╰────────────────────◉
 > ${config.DESCRIPTION}`;
