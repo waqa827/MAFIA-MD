@@ -1,89 +1,52 @@
-const { cmd, commands } = require('../command');
-const axios = require('axios');
+//const fetch = require("node-fetch");
+const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, sleep, fetchJson} = require('../lib/functions')
+const { cmd } = require("../command");
+
+// get pair 2
 
 cmd({
     pattern: "pair",
     alias: ["getpair", "clonebot"],
     react: "✅",
-    desc: "Get pairing code for MAFIA-MD bot",
+    desc: "Pairing code",
     category: "download",
-    use: ".pair +923131613251",
+    use: ".pair ++923131613251",
     filename: __filename
-}, async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
+}, 
+async (conn, mek, m, { from, prefix, quoted, q, reply }) => {
     try {
-        // Extract phone number from command
-        const phoneNumber = q ? q.trim() : senderNumber;
-        
-        // Validate phone number format
-        if (!phoneNumber || !phoneNumber.match(/^\+?\d{10,15}$/)) {
-            return await reply("❌ Please provide a valid phone number with country code\nExample: .pair +9231316XXX");
+        // Helper function for delay
+        const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+        // Validate input
+        if (!q) {
+            return await reply("*Example -* .pair +923131613251");
         }
 
-        // Make API request to get pairing code
-        const response = await axios.get(`https://mafia-md-pair-web.onrender.com/?phone=${encodeURIComponent(phoneNumber)}`);
-        
-        if (!response.data || !response.data.code) {
-            return await reply("❌ Failed to retrieve pairing code. Please try again later.");
+        // Fetch pairing code
+        //const fetch = require("node-fetch");
+        const response = await fetch(`https://mafia-md-pair-web.onrender.com/code?number=${q}`);
+        const pair = await response.json();
+
+        // Check for errors in response
+        if (!pair || !pair.code) {
+            return await reply("Failed to retrieve pairing code. Please check the phone number and try again.");
         }
 
-        const pairingCode = response.data.code;
-        const doneMessage = "> *MAFIA-MD PAIRING COMPLETED*";
+        // Success response
+        const pairingCode = pair.code;
+        const doneMessage = " *MAFIA-MD PAIR COMPLETED*";
 
-        // Send initial message with formatting
+        // Send first message
         await reply(`${doneMessage}\n\n*Your pairing code is:* ${pairingCode}`);
 
-        // Add 2 second delay
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        // Add a delay of 2 seconds before sending the second message
+        await sleep(2000);
 
-        // Send clean code message
-        await reply(`${pairingCode}`);
-
+        // Send second message with just the pairing code
+        await reply(`Code: ${pairingCode}`);
     } catch (error) {
-        console.error("Pair command error:", error);
-        await reply("❌ An error occurred while getting pairing code. Please try again later.");
-    }
-});
-
-
-cmd({
-    pattern: "pair2",
-    alias: ["getpair2", "clonebot2"],
-    react: "✅",
-    desc: "Get pairing code for MAFIA-MD bot",
-    category: "download",
-    use: ".pair +923131613XXX",
-    filename: __filename
-}, async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
-    try {
-        // Extract phone number from command
-        const phoneNumber = q ? q.trim() : senderNumber;
-        
-        // Validate phone number format
-        if (!phoneNumber || !phoneNumber.match(/^\+?\d{10,15}$/)) {
-            return await reply("❌ Please provide a valid phone number with country code\nExample: .pair +9231316XXX");
-        }
-
-        // Make API request to get pairing code
-        const response = await axios.get(`https://jawadxmd.onrender.com/pair?phone=${encodeURIComponent(phoneNumber)}`);
-        
-        if (!response.data || !response.data.code) {
-            return await reply("❌ Failed to retrieve pairing code. Please try again later.");
-        }
-
-        const pairingCode = response.data.code;
-        const doneMessage = "> *MAFIA-MD PAIRING COMPLETED*";
-
-        // Send initial message with formatting
-        await reply(`${doneMessage}\n\n*Your pairing code is:* ${pairingCode}`);
-
-        // Add 2 second delay
-        await new Promise(resolve => setTimeout(resolve, 2000));
-
-        // Send clean code message
-        await reply(`${pairingCode}`);
-
-    } catch (error) {
-        console.error("Pair command error:", error);
-        await reply("❌ An error occurred while getting pairing code. Please try again later.");
+        console.error(error);
+        await reply("An error occurred. Please try again later.");
     }
 });
