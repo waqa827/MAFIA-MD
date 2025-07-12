@@ -16,14 +16,8 @@ async (conn, mek, m, { from, sender, reply }) => {
         const status = `
 ╭───〔 *🤖 ${config.BOT_NAME} STATUS* 〕───◉
 │✨ *Bot is Active & Online!*
-│
+│🫥 *HI GYS ❤️‍🩹 ADEEL SABQI
 │🧠 *Owner:* ${config.OWNER_NAME}
-│⚡ *Version:* 4.0.0
-│📝 *Prefix:* [${config.PREFIX}]
-│📳 *Mode:* [${config.MODE}]
-│💾 *RAM:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${(os.totalmem() / 1024 / 1024).toFixed(2)}MB
-│🖥️ *Host:* ${os.hostname()}
-│⌛ *Uptime:* ${runtime(process.uptime())}
 ╰────────────────────◉
 > ${config.DESCRIPTION}`;
 
@@ -35,7 +29,7 @@ async (conn, mek, m, { from, sender, reply }) => {
                 forwardingScore: 1000,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363300351654980@newsletter',
+                    newsletterJid: '120363374872240664@newsletter',
                     newsletterName: 'MAFIA ADEEL',
                     serverMessageId: 143
                 }
